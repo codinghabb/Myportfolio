@@ -16,7 +16,7 @@ export default function Header() {
 
  
   return (
-    <header className='pt-4 text-white sticky top z-[20] px-6 flex flex-wrap w-full items-center justify-between'>
+    <header className='pt-4 text-white sticky top z-[20] px-3 flex flex-wrap w-full items-center justify-between'>
       <h1 className='text-4xl '>Coding <span>Hab</span></h1>
 
       <nav className='w-1/3 md:mr-2'>
@@ -44,7 +44,7 @@ export default function Header() {
         </ul>
       </nav>
 
-      <div className='mr-1 md:hidden'>
+      <div className='pr-1 md:hidden'>
         <button onClick={toggleNavBar}>
           {isOpen ? (
             <svg
