@@ -1,5 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
+import {BsTwitter} from 'react-icons/bs'
+import { BsLinkedin } from 'react-icons/bs'
+import { FaGithub } from 'react-icons/fa'
+import {MdEmail } from 'react-icons/md'
+
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,23 +14,33 @@ export default function Header() {
     setIsOpen(!isOpen);
   };
 
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-    }
-  };
-
+ 
   return (
-    <header className='pt-4 text-white sticky top z-[20] mx-6 flex flex-wrap w-full items-center justify-between'>
+    <header className='pt-4 text-white sticky top z-[20] px-6 flex flex-wrap w-full items-center justify-between'>
       <h1 className='text-4xl '>Coding <span>Hab</span></h1>
 
       <nav className='w-1/3 md:mr-2'>
-        <ul className='hidden text-2xl w-full md:flex justify-between '>
-          <li><a href="#tech-stack" onClick={() => scrollToSection('tech-stack')}>Tech stack</a></li>
-          <li><a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a></li>
-         
+        <ul className='hidden  text-2xl w-full md:flex justify-between md:mr-3'>
+           <li>
+             <a href="https://twitter.com/habeebbii">
+              <BsTwitter  className=' w-10 h-10'/>
+             </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ademola-abdul-aa093b28a/" >
+                <BsLinkedin className="w-10 h-10" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/codinghabb" >
+                <FaGithub className="w-10 h-10" />
+            </a>
+          </li>
+           <li>
+            <a href="ademolaabds@gmail.com" >
+                <MdEmail className="w-10 h-10" />
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -56,9 +72,27 @@ export default function Header() {
         </button>
       </div>
       {isOpen && (
-        <ul className='flex flex-col text-2xl mt-4 items-start basis-full pl-2'>
-          <li><a href="#tech-stack" onClick={() => scrollToSection('tech-stack')}>Tech stack</a></li>
-          <li><a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a></li>
+        <ul className='flex flex-col gap-4 text-2xl mt-4 items-start basis-full pl-2 md:hidden'>
+          <li>
+             <a href="https://twitter.com/habeebbii">
+              <BsTwitter  className=' w-10 h-10'/>
+             </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ademola-abdul-aa093b28a/" >
+                <BsLinkedin className="w-10 h-10" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/codinghabb" >
+                <FaGithub className="w-10 h-10" />
+            </a>
+          </li>
+          <li>
+            <a href="ademolaabds@gmail.com" >
+                <MdEmail className="w-10 h-10" />
+            </a>
+          </li>
          
         </ul>
       )}
