@@ -2,7 +2,7 @@ import {Texturina} from 'next/font/google'
 import './globals.css'
 
 
-const texturina = Texturina({ subsets: ['latin'] })
+const rubik = Texturina({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'HABEEB portfolio',
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <head>
            <link rel="icon" href="favicon-32x32.png"/>
       </head>
-      <body className={texturina.className}>{children}</body>
+      <body className={rubik.className}>{children}</body>
     </html>
   )
 }

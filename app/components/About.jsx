@@ -3,11 +3,11 @@ import React from 'react'
 
 export default function About() {
   return (
-    <section id="tech-stack">
+    <div>
            <div className=''>
                 <div className=''>
                       <h1 className=' mt-14 md:ml-14 text-5xl md:text-8xl text-center md:text-start'>My name is Habeeb!</h1>
-                      <p className='text-center mt-14 md:text-start md:ml-36 text-4xl'> I&apos;m a front-end developer devoted <br />
+                      <p className='text-center mt-14 md:text-start md:ml-36 text-xl md:text-4xl'> I&apos;m a front-end developer devoted <br />
                           to crafting beautiful web experiences <br />
                           focused on simplicity and purpose.  <br />
                           I have two years experience using various front-end technologies
@@ -15,15 +15,15 @@ export default function About() {
                      
                  </div>
 
-                 <h2 className='mt-14 ml-14 text-5xl md:text-8xl text-center md:text-start'>Education</h2>
-                <div className='text-xl mt-20 text-center md:text-start md:ml-28 space-y-4'>
+                 <h2 className='mt-14  text-4xl md:text-8xl text-center md:text-start md:ml-14'>Education</h2>
+                <div className='text-lg mt-20 text-center md:text-start md:ml-28 space-y-4'>
                    <p >ADVANCED DIPLOMA IN SOFTWARE ENGINEERING  2023</p>
                    <p >CERTIFICATE OF PROFICIENCY IN INFORMATION SYSTEMS MANAGEMENT 2021</p>
                 </div>
                  
          </div>
 
-         <div id=''>
+       
 
         <div className=' mt-8 items-center '>
                 <div>
@@ -43,8 +43,8 @@ export default function About() {
                     
                   </div>
             </div>
-    </div>
+    
 
-    </section>
+    </div>
   )
 }
