@@ -21,7 +21,7 @@ export default function Header() {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 2, // Specify the duration in seconds
+      duration: 1.5, // Specify the duration in seconds
     },
   }}
   initial={{
@@ -32,7 +32,7 @@ export default function Header() {
        
 
         
-              <h1 className='text-3xl '>Coding <span>Hab</span></h1>
+              <h1 className='text-3xl '>DevD</h1>
 
               <nav className='w-1/3 md:mr-2'>
                 <ul className='hidden  text-2xl w-full md:flex justify-between md:mr-3'>

@@ -23,7 +23,7 @@ export default function Home() {
       x:0,
       opacity:1,
       transition:{
-        duration: 3.5
+        duration: 2.5
       }
     }}
     initial={{
