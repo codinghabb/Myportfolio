@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import { useState } from 'react';
 import {BsTwitter} from 'react-icons/bs'
@@ -8,12 +10,18 @@ import { motion } from 'framer-motion';
 
 
 export default function Header() {
+  // for mobile click
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavBar = () => {
     setIsOpen(!isOpen);
   };
 
+   // to send email
+    const emailAddress = 'ademolaabds@gmail.com';
+    const handleClick =() =>{
+      window.location.href = 'mailto${emailAddress}';
+    };
  
   return (
      <motion.div
@@ -104,9 +112,9 @@ export default function Header() {
                     </a>
                   </li>
                   <li>
-                    <a href="ademolaabds@gmail.com" >
+                    <button onClick={handleClick} >
                         <MdEmail className="w-10 h-10" />
-                    </a>
+                    </button>
                   </li>
                 
                 </ul>
