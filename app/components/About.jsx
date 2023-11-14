@@ -10,7 +10,8 @@ export default function About() {
                       <p className='text-center mt-14 md:text-start md:ml-36 text-xl md:text-4xl'> I&apos;m a front-end developer devoted <br />
                           to crafting beautiful web experiences <br />
                           focused on simplicity and purpose.  <br />
-                          I have two years experience using various front-end technologies
+                          I have two years experience using <br />
+                          various front-end technologies
                         </p>
                      
                  </div>
