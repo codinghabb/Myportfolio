@@ -52,7 +52,7 @@ export default function Header() {
                     </a>
                   </li>
                   <li>
-                    <a href="ademolaabds@gmail.com" >
+                    <a href="mailto:ademolaabds@gmail.com" >
                         <MdEmail className="w-10 h-10" />
                     </a>
                   </li>
