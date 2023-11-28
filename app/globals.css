@@ -31,5 +31,6 @@ body {
   top: 420px;
 }
 .x{
-  top:300px;
+  @apply top-[300px];
+ 
 }

@@ -18,11 +18,11 @@ export default function Header() {
   };
 
    // to send email
-    const emailAddress = 'ademolaabds@gmail.com';
-    const handleClick =() =>{
-      window.location.href = 'mailto${emailAddress}';
-    };
- 
+    const handleClick = (e) => {
+    e.preventDefault();
+    window.location.href = 'mailto:ademolaabds@gmail.com';
+  };
+
   return (
      <motion.div
        animate={{
@@ -112,9 +112,9 @@ export default function Header() {
                     </a>
                   </li>
                   <li>
-                    <button onClick={handleClick} >
+                    <a href='#' onClick={handleClick} >
                         <MdEmail className="w-10 h-10" />
-                    </button>
+                    </a>
                   </li>
                 
                 </ul>
