@@ -7,9 +7,11 @@ export default function Projects() {
   return (
     <>
     <section id='projects'  className=' mt-24'>
+      <h1 className=' text-white text-3xl text-center my-4'>Projects are Below</h1>
         <div className=''>
-          <h1 className=' text-white text-3xl text-center my-4'>Consulting agency  Consult Omj</h1>
+          
                <Link href="https://consult-omj.vercel.app/">
+                 <h1 className='text-3xl text-center my-4 underline underline-offset-8'>Consult OMJ</h1>
                  <Image alt='project1' src={ProjectOne}  width={600} height={400} className='mx-auto'/>
                </Link>
         </div>
