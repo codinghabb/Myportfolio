@@ -45,7 +45,7 @@ export default function Header() {
               <nav className='w-1/3 md:mr-2'>
                 <ul className='hidden  text-2xl w-full md:flex justify-between md:mr-3'>
                   <li>
-                    <a href="https://twitter.com/habeebbii">
+                    <a href="https://twitter.com/Demmolaaa">
                       <BsTwitter  className=' w-10 h-10'/>
                     </a>
                   </li>
@@ -97,7 +97,7 @@ export default function Header() {
               {isOpen && (
                 <ul className='flex flex-col gap-4 text-2xl mt-4 items-start basis-full pl-2 md:hidden'>
                   <li>
-                    <a href="https://twitter.com/habeebbii">
+                    <a href="https://twitter.com/Demmolaaa">
                       <BsTwitter  className=' w-10 h-10'/>
                     </a>
                   </li>

@@ -1,4 +1,7 @@
 import React from 'react'
+import Image from 'next/image'
+import C1 from '../components/images/c1.jpg'
+import C2 from '../components/images/c2.jpg'
 
 
 export default function About() {
@@ -24,7 +27,10 @@ export default function About() {
                 </div>
                  
          </div>
-
+        <div className=' flex flex-col gap-10 mx-44 mt-10'>
+              <Image src={C1} alt='certificate'  width={300} height={400}  />
+              <Image alt='certificate' src={C2}  width={300} height={400}  />
+        </div>
        
 
         <div className=' mt-8 items-center '>
